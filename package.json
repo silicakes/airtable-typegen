@@ -46,7 +46,7 @@
     "jest": "^29.3.1",
     "nock": "^13.3.0",
     "oclif": "^3",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "shx": "^0.3.3",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
@@ -59,6 +59,7 @@
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
+    "postInstall": "build",
     "lint": "eslint . --ext .ts",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn lint",
