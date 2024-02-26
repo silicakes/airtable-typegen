@@ -59,7 +59,7 @@
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
-    "postInstall": "build",
+    "prepare": "build",
     "lint": "eslint . --ext .ts",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn lint",
